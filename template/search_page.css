@@ -1,0 +1,406 @@
+body {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-filters {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 40px 0;
+    z-index: 100;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0B7077;
+    margin-left: 10px;
+}
+
+.nav a {
+    margin: 0 35px;
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.login-btn, .signup-btn {
+    padding: 10px 20px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.login-btn {
+    background-color: #ffffff;
+    color: #0B7077;
+    border: 1px solid #ffffff;
+}
+
+.signup-btn {
+    background-color: #0B7077;
+    color: #ffffff;
+}
+
+.catalog-header {
+    background-color: #D2E6E4;
+    padding: 140px 0 60px;
+    position: relative;
+    min-height: 250px;
+    border-radius: 0 0 40px 40px; /* Округление нижних углов */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Тень для секции */
+}
+
+.catalog-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-header h1 {
+    font-size: 36px;
+    color: #0B7077;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.search-bar input {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 15px 20px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: #0B7077;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 0px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-filter-section {
+    display: flex;
+    padding: 20px 0;
+}
+
+.filters {
+    width: 90%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 240px;
+}
+
+.filters h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.filters ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.filters ol li {
+    margin-bottom: 10px;
+}
+
+.filters ol li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.course-list {
+    width: 75%;
+}
+
+.course-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.course-card img {
+    width: auto;
+    height: 100px;
+}
+
+.course-left {
+    display: flex;
+    width: 70%;
+}
+
+.course-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.course-info h4 {
+    color: #5A2D82;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.course-info p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course-provider span {
+    color: #6a6a6a;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.course-rating span {
+    color: #FFA500;
+    font-size: 14px;
+}
+
+.course-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    width: 30%;
+}
+
+.course-right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-right ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.course-right ul li .icon {
+    margin-right: 10px;
+}
+
+.add-to-list-btn {
+    background-color: #0B7077;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-list-btn:hover {
+    background-color: #065A5F;
+}
+
+.course-info {
+    margin-left: 20px;
+}
+
+.enroll-btn {
+    background-color: #FD661F;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #D2E6E4;
+    padding: 60px 0;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column h4 {
+    color: #0B7077;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #4a4a4a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #0B7077;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: #0B7077;
+    font-weight: bold;
+}
+
+.contact-info p {
+    color: #4a4a4a;
+    margin: 20px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #0B7077;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.newsletter-form input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #0B7077;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0B7077;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #e67e22;
+}
+
+@media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.subscribe-btn {
+    background-color: #0B7077;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}

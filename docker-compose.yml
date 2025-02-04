@@ -1,0 +1,49 @@
+version: "3"
+
+services:
+
+  redis:
+    image: "redis:7.0.5-alpine"
+    hostname: redis
+
+  techskill:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/techskill
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+
+  worker:
+    build:
+      context: .
+    hostname: worker
+    entrypoint: celery
+    command: -A techskill worker --loglevel=info
+    volumes:
+      - .:/techskill
+    links:
+      - redis
+    depends_on:
+      - techskill
+      - redis
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+
+  beat:
+    build:
+      context: .
+    hostname: beat
+    entrypoint: celery
+    command: -A celery_app.app beat --loglevel=info
+    volumes:
+      - .:/techskill
+    depends_on:
+      - techskill
+      - redis
+    environment:
+      - REDIS_URL=redis://redis:6379/0

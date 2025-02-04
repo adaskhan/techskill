@@ -1,0 +1,305 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #D2E6E4;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: #0B7077;
+    font-weight: bold;
+}
+
+.nav a {
+    margin-right: 30px;
+    color: #0B7077;
+    text-decoration: none;
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.login-btn, .signup-btn {
+    padding: 10px 20px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.login-btn {
+    background-color: #ffffff;
+    color: #0B7077;
+    border: 1px solid #ffffff;
+}
+
+.signup-btn {
+    background-color: #0B7077;
+    color: #ffffff;
+}
+
+.course-details {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.container-course {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-main {
+    width: 70%;
+    margin-right: 50px;
+}
+
+.course-sidebar {
+    width: 30%;
+}
+
+h1 {
+    font-size: 36px;
+    color: #0B7077;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.course-actions {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.action-btn {
+    background-color: #0B7077;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.related-courses {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-card {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.course-info-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.course-info-box h3 {
+    font-size: 20px;
+}
+
+.course-info-box ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.go-to-course-btn {
+    background-color: #0B7077;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: #D2E6E4;
+    padding: 60px 0;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column h4 {
+    color: #0B7077;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #4a4a4a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #0B7077;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: #0B7077;
+    font-weight: bold;
+}
+
+.contact-info p {
+    color: #4a4a4a;
+    margin: 20px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #0B7077;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.newsletter-form input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #0B7077;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0B7077;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #e67e22;
+}
+
+@media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.share-section {
+    margin-top: 30px;
+}
+
+.share-btn {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.share-btn:hover {
+    background-color: #d35400;
+}
